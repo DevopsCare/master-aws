@@ -5,6 +5,8 @@ locals {
     "ad.ldap.user",
     "ad.ldap.cn",
     "ad.ldap.password",
+    "ad.ldap.host",
+    "ad.ldap.users_dn",
   ]
 }
 
