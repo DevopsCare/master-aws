@@ -1,5 +1,5 @@
 output "subaccount_id" {
-  value = "${aws_organizations_account.account.id}"
+  value = aws_organizations_account.account.id
 }
 
 output "subaccount_role_arn" {
@@ -11,7 +11,7 @@ output "subaccount_signin_url" {
 }
 
 output "dns_zone_id" {
-  value = "${aws_route53_zone.primary.zone_id}"
+  value = aws_route53_zone.primary.zone_id
 }
 
 output "dns_zone_name" {
@@ -19,5 +19,6 @@ output "dns_zone_name" {
 }
 
 output "dns_zone_nameservers" {
-  value = "${aws_route53_zone.primary.name_servers}"
+  value = aws_route53_zone.primary.name_servers
 }
+
