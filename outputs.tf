@@ -6,9 +6,9 @@ output "subaccount_role_arn" {
   value = "arn:aws:iam::${aws_organizations_account.account.id}:role/${aws_organizations_account.account.role_name}"
 }
 
-output "subaccount_signin_url" {
-  value = "https://signin.aws.amazon.com/switchrole?account=${aws_organizations_account.account.id}&roleName=${aws_organizations_account.account.role_name}&displayName=${var.project_prefix}"
-}
+#output "subaccount_signin_url" {
+#  value = "https://signin.aws.amazon.com/switchrole?account=${aws_organizations_account.account.id}&roleName=${aws_organizations_account.account.role_name}&displayName=${var.project_prefix}"
+#}
 
 output "dns_zone_id" {
   value = aws_route53_zone.primary.zone_id
