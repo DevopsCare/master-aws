@@ -1,6 +1,6 @@
 //noinspection MissingModule
 module "terraform_state_backend" {
-  source              = "git::https://github.com/cloudposse/terraform-aws-tfstate-backend.git?ref=master"
+  source              = "git::https://github.com/cloudposse/terraform-aws-tfstate-backend.git?ref=tags/0.16.0"
   region              = var.aws_region
   namespace           = var.org_rev_fqdn
   environment         = var.project_prefix
