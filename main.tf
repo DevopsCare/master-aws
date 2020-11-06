@@ -8,15 +8,12 @@ provider "aws" {
 }
 
 provider "aws" {
-  alias  = "master"
-  region = var.aws_region
+  alias = "master"
 }
 
 module "base_label" {
-  source              = "git::https://github.com/cloudposse/terraform-null-label.git?ref=tags/0.19.2"
-  namespace           = var.org_rev_fqdn
-  environment         = var.project_prefix
-  regex_replace_chars = "/[^a-zA-Z0-9-.]/"
-  delimiter           = "."
+  source      = "git::https://github.com/cloudposse/terraform-null-label.git?ref=tags/0.19.2"
+  namespace   = var.org_rev_fqdn
+  environment = var.project_prefix
 }
 
