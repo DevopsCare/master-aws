@@ -1,5 +1,5 @@
 module "primary_label" {
-  source  = "git::https://github.com/cloudposse/terraform-null-label.git?ref=tags/0.19.2"
+  source  = "git::https://github.com/cloudposse/terraform-null-label.git?ref=tags/0.22.0"
   context = module.base_label.context
   name    = "dns"
 }
